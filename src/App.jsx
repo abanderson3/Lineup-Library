@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import Dashboard from './components/Dashboard.jsx'
 import LoginButton from './components/LoginButton.jsx'
+const SpotifyWebApi = require('spotify-web-api-node')
 
 
 export const App = () => {
@@ -30,11 +31,11 @@ export const App = () => {
     }
   }, [])
 
-  const userIsLoggedIn = () => {
+  const isUserLoggedIn = () => {
     if (loggedIn) {
       return < Dashboard />
     } else {
-      return <LoginButton signInOnClick={signInOnClick}/>
+      return < LoginButton signInOnClick={signInOnClick} />
     }
   }
 
@@ -42,7 +43,7 @@ export const App = () => {
   return (
     <div>
       <h1>Festival Playlist!</h1>
-      {userIsLoggedIn()}
+      {isUserLoggedIn()}
     </div>
 
   )

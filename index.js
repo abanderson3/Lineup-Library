@@ -3,6 +3,7 @@ const path = require('path');
 const dotenv = require('dotenv').config()
 const request = require('request')
 const querystring = require('querystring')
+const { getAllBonnarooArtists } = require('./db/dbQueries.js')
 
 
 let app = express();
@@ -18,6 +19,7 @@ let redirect_uri =
   'http://localhost:8888/callback'
 
 
+app.get('/bonnarooArtists', getAllBonnarooArtists)
 
 
 app.get('/login', function(req, res) {

@@ -215,3 +215,5 @@ const lineup = {
 
   "Rome In Silver": "0Hh9X3QxTHPE2dlAS1g8IN",
 }
+
+module.exports = { lineup }

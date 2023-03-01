@@ -16,6 +16,7 @@ const SpotifyWebApi = require('spotify-web-api-node')
 export const App = () => {
   const [ userAccessToken, setAccessToken ] = useState('');
   const [ loggedIn, setIsLoggedIn ] = useState(false);
+  const [ bonnarooArtists, setBonnarooArtists ] = useState([])
 
   const signInOnClick = () => {
     window.location='http://localhost:8888/login'
@@ -31,14 +32,25 @@ export const App = () => {
     }
   }, [])
 
+  useEffect(() => {
+    axios.get('/bonnarooArtists')
+    .then((results) => {
+      setBonnarooArtists(results.data)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  }, [Dashboard])
+
   const isUserLoggedIn = () => {
     if (loggedIn) {
-      return < Dashboard />
+      return < Dashboard bonnarooArtists={bonnarooArtists}/>
     } else {
       return < LoginButton signInOnClick={signInOnClick} />
     }
   }
 
+  console.log(bonnarooArtists)
 
   return (
     <div>

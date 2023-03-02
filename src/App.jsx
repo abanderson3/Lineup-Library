@@ -17,10 +17,14 @@ export const App = () => {
   const [ userAccessToken, setAccessToken ] = useState('');
   const [ loggedIn, setIsLoggedIn ] = useState(false);
   const [ bonnarooArtists, setBonnarooArtists ] = useState([])
+  const [ fest, selectFest ] = useState('');
+  const [ selectedArtists, setSelectedArtists ] = useState([]);
 
   const signInOnClick = () => {
     window.location='http://localhost:8888/login'
   }
+
+  console.log(selectedArtists)
 
   useEffect(() => {
     if (location.search) {
@@ -44,18 +48,24 @@ export const App = () => {
 
   const isUserLoggedIn = () => {
     if (loggedIn) {
-      return < Dashboard bonnarooArtists={bonnarooArtists}/>
+      return < Dashboard selectedArtists={selectedArtists} setSelectedArtists={ setSelectedArtists } fest={ fest } selectFest={ selectFest } bonnarooArtists={bonnarooArtists}/>
     } else {
       return < LoginButton signInOnClick={signInOnClick} />
     }
   }
 
-  console.log(bonnarooArtists)
+  const titleOnClick = () => {
+    selectFest('festList')
+  }
+
+  // console.log(bonnarooArtists)
 
   return (
-    <div>
-      <h1>Festival Playlist!</h1>
-      {isUserLoggedIn()}
+    <div className="main">
+      <div onClick={ titleOnClick } className="header">Festival Playlist!!</div>
+      <div className="landing-page">
+        { isUserLoggedIn() }
+      </div>
     </div>
 
   )

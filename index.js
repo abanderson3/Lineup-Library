@@ -3,7 +3,7 @@ const path = require('path');
 const dotenv = require('dotenv').config()
 const request = require('request')
 const querystring = require('querystring')
-const { getAllBonnarooArtists } = require('./db/dbQueries.js')
+const { getAllBonnarooArtists, getTopSongsOfSelectedArtists } = require('./db/dbQueries.js')
 
 
 let app = express();
@@ -20,6 +20,8 @@ let redirect_uri =
 
 
 app.get('/bonnarooArtists', getAllBonnarooArtists)
+
+app.get('/selectedArtistTracks', getTopSongsOfSelectedArtists)
 
 
 app.get('/login', function(req, res) {

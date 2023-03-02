@@ -1,6 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
 #app {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid purple;
+  align-content: center;
 }
+
+
+.main {
+  display:flex;
+  flex-direction: column;
+  border: 1px solid green;
+  width: 65%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.65rem;
+  padding: 1.5rem;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.festival-list {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  height: 100vh;
+  padding: 40px;
+  justify-content: space-around;
+}
+
+.festival-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 27%;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.festival-card:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: gray;
+}
+
+.festival-card-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -1rem;
+}
+
+.festival-card-date {
+  padding: 0.3rem
+}
+
+
+.artist-list {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px red solid; */
+  width: 60%;
+}
+
+.artist-headers {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+  padding: 10px;
+  /* border: 1px solid red; */
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.col1 {
+  text-align: start;
+}
+
+.col3 {
+  text-align: end;
+}
+
+.single-artist {
+  display: grid;
+  border: 2px black solid;
+  padding: 10px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.row {
+  background-color: inherit;
+}
+
+.selected {
+  background-color: rgba(162, 236, 205, 0.548);
+}
+
+.single-artist:hover {
+  transition: .3s;
+  background-color: rgb(196, 194, 194);
+}
+
+.single-artist:focus {
+  background-color: red;
+}
+
+
+.artist-name {
+  grid-column-start: 1;
+  text-align: start;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.2rem;
+}
+
+.artist-genres {
+  grid-column-start: 2;
+  padding: 2px;
+
+}
+
+.artist-popularity {
+  grid-column-start: 3;
+  text-align: end;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.2rem;
+}
+

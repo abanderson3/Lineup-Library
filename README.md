@@ -7,7 +7,8 @@
   - [Built With](#built-with)
  - [Features](#features)
   - [Authorization](#authorization)
-  - [Artist List](#artist-list)
+  - [Festival and Artist List](#artist-list)
+  - [Playlist Creation]{#playlist-creation)
   - [Back End](#back-end)
   
   
@@ -39,8 +40,12 @@
 Here are some of the features of Lineup Library:
 
 ### Authorization
-![login](https://github.com/abanderson3/Lineup-Library/blob/7f0f9d4d8f628fdd30a98a496217d08084a04514/src/Auth%20LL.gif)
+![login](https://raw.githubusercontent.com/abanderson3/Lineup-Library/7f0f9d4d8f628fdd30a98a496217d08084a04514/src/Auth%20LL.gif?token=GHSAT0AAAAAACAZSDPF4JTXB6EEY7FPC5UAZBURYQQ)
 
-### Artist List
+### Festival and Artist List
+![list](https://github.com/abanderson3/Lineup-Library/blob/e9d9ca0bbbe60e672b37b18ad6d82a0400d79369/src/List%20LL.gif)
+
+### Playlist Creation
+![creating](https://github.com/abanderson3/Lineup-Library/blob/main/src/Creating%20LL.gif)
 
 ### Back End

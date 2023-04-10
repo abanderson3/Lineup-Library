@@ -39,6 +39,7 @@
 Here are some of the features of Lineup Library:
 
 ### Authorization
+https://github.com/abanderson3/Lineup-Library/blob/7f0f9d4d8f628fdd30a98a496217d08084a04514/src/Auth%20LL.gif
 
 ### Artist List
 

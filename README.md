@@ -8,7 +8,7 @@
  - [Features](#features)
   - [Authorization](#authorization)
   - [Festival and Artist List](#artist-list)
-  - [Playlist Creation]{#playlist-creation)
+  - [Playlist Creation](#playlist-creation)
   - [Back End](#back-end)
   
   
@@ -19,7 +19,7 @@
 
 - Authorization: 
 
-    <img src="https://avatars.githubusercontent.com/u/2824157?s=280&v=4" width=30px height=30px> **Auth0**
+    <img src="https://github.com/abanderson3/Lineup-Library/blob/main/src/Auth%20LL.gif" width=30px height=30px> **Auth0**
     
 - Front End:
 

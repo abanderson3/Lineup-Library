@@ -12,7 +12,7 @@
   
   
 ## Introduction
-
+The goal of Lineup Library is to create a better way for people to decide whether they want to attend a music festival or explore the lineup of a festival they plan to attend. Music festivals are an incredible way to find new music and this applicaiton is meant to streamline the artist discovery process and get users excited for upcoming events!
 
 ### Built With
 

@@ -9,7 +9,6 @@
   - [Authorization](#authorization)
   - [Festival and Artist List](#artist-list)
   - [Playlist Creation](#playlist-creation)
-  - [Back End](#back-end)
   
   
 ## Introduction
@@ -40,12 +39,16 @@
 Here are some of the features of Lineup Library:
 
 ### Authorization
-![login](https://raw.githubusercontent.com/abanderson3/Lineup-Library/7f0f9d4d8f628fdd30a98a496217d08084a04514/src/Auth%20LL.gif?token=GHSAT0AAAAAACAZSDPF4JTXB6EEY7FPC5UAZBURYQQ)
+A user is able to log into their Spotify account using Auth0 authentication. This process generates an authorization code that can then be used in all future requests to the Spotify API for user data or artist information. 
+
+![login](https://github.com/abanderson3/Lineup-Library/blob/027248562da0d4c06f6a07e8154ab1858deff5dd/src/Auth%20LL.gif)
 
 ### Festival and Artist List
+After login, the user is given an opportunity to select from upcoming music festivals to view the list of artists attending the festival. The artist list provides the genres of each individual artist, their name, and their Spotify popularity ranking. The Spotify popularity ranking is used to sort the artist list and is a 0 to 100 score determined by a mixture of all spotify statistics. 
+
 ![list](https://github.com/abanderson3/Lineup-Library/blob/e9d9ca0bbbe60e672b37b18ad6d82a0400d79369/src/List%20LL.gif)
 
 ### Playlist Creation
-![creating](https://github.com/abanderson3/Lineup-Library/blob/main/src/Creating%20LL.gif)
+A user can create a playlist by selecting any artists they are interested in, providing a playlist title, and subtitle. When the user clicks "Create Playlist", the top 10 songs of all artists selected are added to a playlist with the users Spotify. 
 
-### Back End
+![creating](https://github.com/abanderson3/Lineup-Library/blob/main/src/Creating%20LL.gif)
